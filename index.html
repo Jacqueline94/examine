@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title></title>
+	<link href="css/index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div class="head"></div>
+	<div id="shop-list">
+		<div id="shop">
+			<img src="image/Bitmap 2 Copy 2.png" class="cover">
+			<div class="infor">
+				<span class="title">新白鹿餐厅(滨江店)</span>
+				<img src="image/Rectangle 363 Copy 2 .png" id="qiang">
+				<img src="image/student.png" id="xue">
+				<img src="image/story.png" id="pingpai">
+				<div class="appraise">
+					<img src="image/star 5.png" class="star">
+					<span>人均52元</span>
+					<img src="image/Path 124.png" class="zan">
+					<span class="number">3位朋友&nbsp;&lt;100m</span>
+				</div>
+				<div class="discount">
+					<span class="num">7</span>
+					<span class="w">折</span>
+				</div>
+			</div>
+		</div>
+		<div id="shop">
+			<img src="image/Bitmap 2 Copy 2.png" class="cover">
+			<div class="infor">
+				<span class="title">老北京涮锅&nbsp;&nbsp;</span>
+				<div class="appraise">
+					<img src="image/star 5.png" class="star">
+					<span>人均55元</span>
+					<img src="image/Path 124.png" class="zan">
+					<span class="number">1位朋友&nbsp;&lt;100m</span>
+				</div>
+				<div class="discount">
+					<span class="num">7.5</span>
+					<span class="w">折</span>
+				</div>
+			</div>
+		</div>
+		<div id="shop">
+			<img src="image/Bitmap 2 Copy 2.png" class="cover">
+			<div class="infor">
+				<span class="title">新记台式创意菜</span>
+				<div class="appraise">
+					<img src="image/star 5.png" class="star">
+					<span>人均60元</span>
+					<img src="image/Path 124.png" class="zan">
+					<span class="number">4位朋友&nbsp;230m</span>
+				</div>
+				<div class="discount">
+					<span class="num">8</span>
+					<span class="w">折</span>
+				</div>
+			</div>
+		</div>
+		<div id="shop">
+			<img src="image/Bitmap 2 Copy 2.png" class="cover">
+			<div class="infor">
+				<span class="title">港丽茶餐厅&nbsp;&nbsp;&nbsp;</span>
+				<div class="appraise">
+					<img src="image/star 5.png" class="star">
+					<span>人均120元</span>
+					<span class="numb">893人已共享&nbsp;500m</span>
+				</div>
+				<div class="discount">
+					<span class="num">8.5</span>
+					<span class="w">折</span>
+				</div>
+			</div>
+		</div>
+		<div id="shop">
+			<img src="image/Bitmap 2 Copy 2.png" class="cover">
+			<div class="infor">
+				<span class="title">望湘园&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<div class="appraise">
+					<img src="image/star 5.png" class="star">
+					<span>人均70元</span>
+					<span class="numb">541人已共享&nbsp;115m</span>
+				</div>
+				<div class="discount">
+					<span class="num">9</span>
+					<span class="w">折</span>
+				</div>
+			</div>
+		</div>
+		<div id="shop">
+			<img src="image/Bitmap 2 Copy 2.png" class="cover">
+			<div class="infor">
+				<span class="title">望湘园&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<div class="appraise">
+					<img src="image/star 5.png" class="star">
+					<span>人均70元</span>
+					<span class="numb">541人已共享&nbsp;115m</span>
+				</div>
+				<div class="discount">
+					<span class="num">9</span>
+					<span class="w">折</span>
+				</div>
+			</div>
+		</div>
+		<div id="shop">
+			<img src="image/Bitmap 2 Copy 2.png" class="cover">
+			<div class="infor">
+				<span class="title">望湘园&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<div class="appraise">
+					<img src="image/star 5.png" class="star">
+					<span>人均70元</span>
+					<span class="numb">541人已共享&nbsp;115m</span>
+				</div>
+				<div class="discount">
+					<span class="num">9</span>
+					<span class="w">折</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+var totalheight = 0;    
+function loaddata(){
+  totalheight = parseFloat($(window).height()) + parseFloat($(window).scrollTop());    
+    if ($(document).height()/2 <= totalheight)     
+    {
+        $("#container").append("2333</br>");
+    }
+}
+$(window).scroll( function() {
+    console.log("滚动条到顶部的垂直高度: "+$(document).scrollTop());
+    console.log("页面的文档高度 ："+$(document).height());
+    console.log('浏览器的高度：'+$(window).height());
+    loaddata();
+});
+</script>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="flexible.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+</html>
