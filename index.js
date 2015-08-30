@@ -15,13 +15,7 @@ function createXMLHttpRequest(){
         }   
     }
 }
-// function sendRequestPost(url,bAsyn,param){  
-//     createXMLHttpRequest();  
-//     xmlHttpRequest.open("POST",url,bAsyn);  
-//     xmlHttpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded");  
-//     xmlHttpRequest.onreadystatechange = processResponse;  
-//     xmlHttpRequest.send(param);  
-// }
+
 var xhr = createXMLHttpRequest();
 xhr.open("get", "example.txt", false) ;
 xhr.send(null);
